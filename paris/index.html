@@ -41,6 +41,7 @@ h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ro
 .visuel img{color:transparent;font-size:0}
 .sans-visuel{display:flex;align-items:center;justify-content:center;font-family:var(--titre);font-size:48px;color:var(--bg);background:linear-gradient(180deg,var(--violet),var(--rose))!important}
 .num{position:absolute;top:-8px;left:-8px;width:36px;height:36px;border-radius:50%;background:var(--rose);color:var(--bg);font-family:var(--titre);font-size:19px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px var(--bg)}
+.coeur{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%) rotate(-5deg);white-space:nowrap;background:var(--violet);color:#fff;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:4px 7px}
 .infos{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
 .quand{margin:0;font-size:13px;font-weight:800;color:var(--rose)}
 .carte h3{margin:0;font-family:var(--titre);font-weight:400;font-size:22px;line-height:1.05;text-transform:uppercase;overflow-wrap:anywhere}
@@ -77,7 +78,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 <p class="chapo">8 coups de cœur de la vidéo, puis 80 autres soirées. Clique pour prendre ta place.</p>
 
 <h2>Les soirées de la vidéo</h2><div class='liste'><article class="carte" data-jour="2026-11-20" data-ambiance="Techno">
-  <div class="visuel"><img loading="lazy" src="https://images.ra.co/6aa6d83bfe07821e7eaa2df9e1da37b256e369e6.png" alt="Visuel de Outrebleu [Weekender]"><span class="num" aria-label="Soirée 1 de la vidéo">1</span></div>
+  <div class="visuel"><img loading="lazy" src="https://images.ra.co/6aa6d83bfe07821e7eaa2df9e1da37b256e369e6.png" alt="Visuel de Outrebleu [Weekender]"><span class="num" aria-label="Soirée 1 de la vidéo">1</span><span class="coeur">Coup de cœur</span></div>
   <div class="infos">
     <p class="quand">Ven. 20 · 19h → 6h</p>
     <h3>Outrebleu [Weekender]</h3>
@@ -91,7 +92,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Plan_de_travail_1_ulpmoe.png" alt="Visuel de Cabaret Mixity"><span class="num" aria-label="Soirée 2 de la vidéo">2</span></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h30</p>
+    <p class="quand">Ven. 20 · 19h30 · 20e</p>
     <h3>Cabaret Mixity</h3>
     <p class="lieu">La Bellevilloise</p>
     <div class="puces"></div>
@@ -103,7 +104,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/60c78dd69232989df3b504d358e132579354500a.jpg" alt="Visuel de House Archive : Leo Pol, Coleeeette, Arthur Pringle &amp; Toma"><span class="num" aria-label="Soirée 3 de la vidéo">3</span></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h59 → 7h</p>
+    <p class="quand">Ven. 20 · 23h59 → 7h · 10e</p>
     <h3>House Archive : Leo Pol, Coleeeette, Arthur Pringle &amp; Toma</h3>
     <p class="lieu">La Java</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">ELECTRO</span></div>
@@ -115,7 +116,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/shotgun-horizontal-1920-1080-1_eqo3z7.png" alt="Visuel de Gnawa House Experience"><span class="num" aria-label="Soirée 4 de la vidéo">4</span></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 22h</p>
+    <p class="quand">Ven. 20 · 22h · 5e</p>
     <h3>Gnawa House Experience</h3>
     <p class="lieu">Le Son de la Terre</p>
     <div class="puces"><span class="puce">AFRO HOUSE</span><span class="puce">DEEP HOUSE</span></div>
@@ -127,7 +128,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Pop">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/021026_Groupie_Shotgun_horizontal_2_fkzl5e.png" alt="Visuel de French Collection"><span class="num" aria-label="Soirée 5 de la vidéo">5</span></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 22h</p>
+    <p class="quand">Ven. 20 · 22h · 18e</p>
     <h3>French Collection</h3>
     <p class="lieu">Madame Arthur</p>
     <div class="puces"><span class="puce">VARIÉTÉ FRANÇAISE</span><span class="puce">POP</span></div>
@@ -139,7 +140,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/1d127bf7-ae9d-469c-876b-3042c8831d48_a30ypw.jpg" alt="Visuel de Nuit Blanche - Old School Vs New School"><span class="num" aria-label="Soirée 6 de la vidéo">6</span></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h</p>
+    <p class="quand">Sam. 21 · 23h · 13e</p>
     <h3>Nuit Blanche - Old School Vs New School</h3>
     <p class="lieu">Wanderlust</p>
     <div class="puces"><span class="puce">HIP HOP</span><span class="puce">R&amp;B</span></div>
@@ -151,7 +152,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/5a22823382ebc39843a5cb694559328d9f7997c9.jpg" alt="Visuel de DADDY ISSUES: MOTHER EDITION"><span class="num" aria-label="Soirée 7 de la vidéo">7</span></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h59 → 7h</p>
+    <p class="quand">Sam. 21 · 23h59 → 7h · 18e</p>
     <h3>DADDY ISSUES: MOTHER EDITION</h3>
     <p class="lieu">La Station - Gare des Mines</p>
     <div class="puces"></div>
@@ -197,7 +198,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2024/08/09/huge-c2a1a2cf46d26a8af3c4a440051c2967.jpg" alt="Visuel de Le prisonnier de la Bastille"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 0h</p>
+    <p class="quand">Ven. 20 · 0h · 12e</p>
     <h3>Le prisonnier de la Bastille</h3>
     <p class="lieu">Jardin de l&#x27;Arsenal, sur le quai du Port de l&#x27;Arsenal</p>
     <div class="puces"></div>
@@ -209,7 +210,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2025/12/19/huge-23814be7ae127a93887cfa00769c3565.jpg" alt="Visuel de Conservatoire Jacques Ibert, Paris 19e : Saison 2026-2027"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 0h</p>
+    <p class="quand">Ven. 20 · 0h · 19e</p>
     <h3>Conservatoire Jacques Ibert, Paris 19e : Saison 2026-2027</h3>
     <p class="lieu">Conservatoire Municipal Jacques Ibert</p>
     <div class="puces"></div>
@@ -221,7 +222,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2024/08/08/huge-4daea7c6e3efee3c3fab678bcc6c5539.jpg" alt="Visuel de Notre-Dame de Paris : les mystères de la reconstruction"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 0h</p>
+    <p class="quand">Ven. 20 · 0h · 4e</p>
     <h3>Notre-Dame de Paris : les mystères de la reconstruction</h3>
     <p class="lieu">Pont au Double</p>
     <div class="puces"></div>
@@ -245,7 +246,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/BANNIE%CC%80RE_SHOTGUN_-_GUILTY_PLEASURE-_V2_rkc2p6.png" alt="Visuel de La Guilty Pleasure Xxl : Monchatetmoi, Karaoké &amp; Bingo"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 18h</p>
+    <p class="quand">Ven. 20 · 18h · 12e</p>
     <h3>La Guilty Pleasure Xxl : Monchatetmoi, Karaoké &amp; Bingo</h3>
     <p class="lieu">Le Mazette</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">R&amp;B</span></div>
@@ -257,7 +258,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Bateau_Phare_-_Communication-4_imuurm.jpg" alt="Visuel de Raclette Disco Club"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 18h</p>
+    <p class="quand">Ven. 20 · 18h · 13e</p>
     <h3>Raclette Disco Club</h3>
     <p class="lieu">LE BATEAU PHARE</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">DISCO HOUSE</span></div>
@@ -269,7 +270,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/12/huge-abf172e856eb386170bf7db45cf4a5ac.png" alt="Visuel de Rire en Scène"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 18h30</p>
+    <p class="quand">Ven. 20 · 18h30 · 11e</p>
     <h3>Rire en Scène</h3>
     <p class="lieu">Mairie du 11e arrondissement</p>
     <div class="puces"></div>
@@ -293,7 +294,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Latino">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/LE_SPOT_VEN20NOV_-_SHOTGUN_srx9tv.png" alt="Visuel de El Cartel - Bar Latino"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h</p>
+    <p class="quand">Ven. 20 · 19h · 18e</p>
     <h3>El Cartel - Bar Latino</h3>
     <p class="lieu">Sacré</p>
     <div class="puces"><span class="puce">BRAZILIAN</span><span class="puce">REGGAETON</span></div>
@@ -329,7 +330,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/10/13/huge-c4cf4d849a44edf5d9b1d13944585936.png" alt="Visuel de Et voilà ! Concerts gratuits à l&#x27;Hôpital Bretonneau"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h</p>
+    <p class="quand">Ven. 20 · 19h · 18e</p>
     <h3>Et voilà ! Concerts gratuits à l&#x27;Hôpital Bretonneau</h3>
     <p class="lieu">Auditorium de l&#x27;Hôpital Bretonneau</p>
     <div class="puces"></div>
@@ -341,7 +342,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/16/huge-576435c44144d0e685b3e5363082b230.png" alt="Visuel de Spectacle «L&#x27;Héritier»"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h</p>
+    <p class="quand">Ven. 20 · 19h · 14e</p>
     <h3>Spectacle «L&#x27;Héritier»</h3>
     <p class="lieu">Centre socioculturel Maurice Noguès</p>
     <div class="puces"></div>
@@ -365,7 +366,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/03/20/huge-40937d6e70065a59f48f860368d449d8.jpg" alt="Visuel de Paris Sportives : Handball et Basket Ball avec l’association Kabubu"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h30</p>
+    <p class="quand">Ven. 20 · 19h30 · 18e</p>
     <h3>Paris Sportives : Handball et Basket Ball avec l’association Kabubu</h3>
     <p class="lieu">Terrain de Sport de la Goutte d&#x27;Or</p>
     <div class="puces"></div>
@@ -377,7 +378,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/04/huge-df488dc25ae0a2669a6f82eeabd97a9f.jpg" alt="Visuel de Projection du documentaire «Les Garçons de la piscine»"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h30</p>
+    <p class="quand">Ven. 20 · 19h30 · 13e</p>
     <h3>Projection du documentaire «Les Garçons de la piscine»</h3>
     <p class="lieu">Maison de la Vie Associative et Citoyenne du 13e arrondissement</p>
     <div class="puces"></div>
@@ -389,7 +390,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/03/huge-81db1c302639ac45df7bd3c70352e4f8.jpg" alt="Visuel de Festival des Fiertés : Les apéros du WAB, à la rencontre de Grimpe&amp;Glisse"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 19h30</p>
+    <p class="quand">Ven. 20 · 19h30 · 4e</p>
     <h3>Festival des Fiertés : Les apéros du WAB, à la rencontre de Grimpe&amp;Glisse</h3>
     <p class="lieu">WAB</p>
     <div class="puces"></div>
@@ -401,7 +402,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/B2719337-CDCD-43EA-BAB7-BF7DE979CE6C_zb8met.jpg" alt="Visuel de Extravafrench - 100% Féminin"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h</p>
+    <p class="quand">Ven. 20 · 20h · 11e</p>
     <h3>Extravafrench - 100% Féminin</h3>
     <p class="lieu">Les Disquaires</p>
     <div class="puces"><span class="puce">R&amp;B</span><span class="puce">AFRO HOUSE</span></div>
@@ -413,7 +414,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/1920X1080_20_hssdps.png" alt="Visuel de Myko X Lucky - Special Edition / Nanna"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h</p>
+    <p class="quand">Ven. 20 · 20h · 5e</p>
     <h3>Myko X Lucky - Special Edition / Nanna</h3>
     <p class="lieu">Nanna</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">TECH HOUSE</span></div>
@@ -425,7 +426,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/AMALUNA_1920x1080_couleurs_douces_i7ept5.png" alt="Visuel de Era District:Afrobeat&amp;Amapiano Experience ( With Workshop )"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h</p>
+    <p class="quand">Ven. 20 · 20h · 18e</p>
     <h3>Era District:Afrobeat&amp;Amapiano Experience ( With Workshop )</h3>
     <p class="lieu">Amaluna</p>
     <div class="puces"><span class="puce">AFROBEAT</span><span class="puce">AMAPIANO</span></div>
@@ -437,7 +438,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/06/huge-f679515b39f9ffe7a02c26bcb38c5c03.jpg" alt="Visuel de Spectacle - La Farce de Maître Pathelin"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h</p>
+    <p class="quand">Ven. 20 · 20h · 8e</p>
     <h3>Spectacle - La Farce de Maître Pathelin</h3>
     <p class="lieu">Centre Paris Anim&#x27; Beaujon</p>
     <div class="puces"></div>
@@ -449,7 +450,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/09/24/huge-8dd99994f29b25bf06d4aac973dec478.jpg" alt="Visuel de Histoires de famille - Spectacle d&#x27;impro pour toute la famille"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h</p>
+    <p class="quand">Ven. 20 · 20h · 11e</p>
     <h3>Histoires de famille - Spectacle d&#x27;impro pour toute la famille</h3>
     <p class="lieu">À LA FOLIE THEATRE</p>
     <div class="puces"></div>
@@ -461,7 +462,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/10/13/huge-c4cf4d849a44edf5d9b1d13944585936.png" alt="Visuel de Et voilà ! Concerts gratuits à l&#x27;Accord Parfait"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 20h30</p>
+    <p class="quand">Ven. 20 · 20h30 · 18e</p>
     <h3>Et voilà ! Concerts gratuits à l&#x27;Accord Parfait</h3>
     <p class="lieu">Studio l&#x27;Accord Parfait</p>
     <div class="puces"></div>
@@ -473,7 +474,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/visuel-images-1920x1080_u7doer.png" alt="Visuel de Abdullah Miniawy Trio + Carte Blanche À Sekta Selekta"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 21h</p>
+    <p class="quand">Ven. 20 · 21h · 4e</p>
     <h3>Abdullah Miniawy Trio + Carte Blanche À Sekta Selekta</h3>
     <p class="lieu">Péniche Marcounet</p>
     <div class="puces"></div>
@@ -485,7 +486,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/11/05/huge-42e08dfeeb51c3c7f89ef7c52220e527.png" alt="Visuel de Spectacle &quot;Tribe&quot; au Théâtre du Chariot par la cie Les Comploteurs - Un spectacle documentaire sur le mouvement Free Party"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 21h</p>
+    <p class="quand">Ven. 20 · 21h · 11e</p>
     <h3>Spectacle &quot;Tribe&quot; au Théâtre du Chariot par la cie Les Comploteurs - Un spectacle documentaire sur le mouvement Free Party</h3>
     <p class="lieu">Théâtre du Chariot</p>
     <div class="puces"></div>
@@ -497,7 +498,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/09/16/huge-97cbbb539b1ce9e6740baae72583ebf2.jpg" alt="Visuel de Djamil le Shlag | Humour"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 21h</p>
+    <p class="quand">Ven. 20 · 21h · 12e</p>
     <h3>Djamil le Shlag | Humour</h3>
     <p class="lieu">Théâtre Traversière</p>
     <div class="puces"></div>
@@ -509,7 +510,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/08/26/huge-4804c2b8dec65ba3b93d3c9954385536.jpg" alt="Visuel de Une heure avec Frida Kahlo"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 22h</p>
+    <p class="quand">Ven. 20 · 22h · 4e</p>
     <h3>Une heure avec Frida Kahlo</h3>
     <p class="lieu">Théâtre Comédie Bastille</p>
     <div class="puces"></div>
@@ -521,7 +522,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/09/21/huge-c28b9f2fbdd0cc6359cc1b936e122126.png" alt="Visuel de Les Nuits d&#x27;Orion : le néo-cabaret qui traverse la nuit."></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 22h</p>
+    <p class="quand">Ven. 20 · 22h · 17e</p>
     <h3>Les Nuits d&#x27;Orion : le néo-cabaret qui traverse la nuit.</h3>
     <p class="lieu">Studio Hébertot</p>
     <div class="puces"></div>
@@ -533,7 +534,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/billetterie26_3_atehkc.jpg" alt="Visuel de Vintage Clubbing W/ Boogie Frizzante &amp; Polpette Soundsystem"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 22h30</p>
+    <p class="quand">Ven. 20 · 22h30 · 11e</p>
     <h3>Vintage Clubbing W/ Boogie Frizzante &amp; Polpette Soundsystem</h3>
     <p class="lieu">La Casbah</p>
     <div class="puces"><span class="puce">DISCO</span><span class="puce">ELECTRO</span></div>
@@ -545,7 +546,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Pop">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Sans_titre_-_19_novembre_2026_%C3%A0_23.37.06-8_zujxgd.png" alt="Visuel de Queer Du Bled &amp; Friends A La Folie"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h</p>
+    <p class="quand">Ven. 20 · 23h · 19e</p>
     <h3>Queer Du Bled &amp; Friends A La Folie</h3>
     <p class="lieu">À la folie</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">ARABIC HOUSE</span></div>
@@ -557,7 +558,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Latino">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/SOIREE_LATINO_Bizzart_20112026_BANDEAU_gi00or.jpg" alt="Visuel de Soirée Latino X Canal St"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h</p>
+    <p class="quand">Ven. 20 · 23h · 10e</p>
     <h3>Soirée Latino X Canal St</h3>
     <p class="lieu">Bizz&#x27;art</p>
     <div class="puces"><span class="puce">REGGAETON</span><span class="puce">SALSA</span></div>
@@ -569,7 +570,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Friday_16x9_w9nwzo.jpg" alt="Visuel de Le Rouge Friday"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h</p>
+    <p class="quand">Ven. 20 · 23h · 9e</p>
     <h3>Le Rouge Friday</h3>
     <p class="lieu">Le Rouge</p>
     <div class="puces"><span class="puce">R&amp;B</span><span class="puce">RAP</span></div>
@@ -629,7 +630,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/DarkXRoom_2026-11-20_1920x1080_w9rf3o.jpg" alt="Visuel de Darkxroom 1er Anniversaire"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h55</p>
+    <p class="quand">Ven. 20 · 23h55 · 1er</p>
     <h3>Darkxroom 1er Anniversaire</h3>
     <p class="lieu">Le Klub</p>
     <div class="puces"><span class="puce">PSYTRANCE</span><span class="puce">TECHNO</span></div>
@@ -641,7 +642,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/3-horizontal_iuogsi.png" alt="Visuel de Mini Club #"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h55</p>
+    <p class="quand">Ven. 20 · 23h55 · 12e</p>
     <h3>Mini Club #</h3>
     <p class="lieu">Les Étoiles</p>
     <div class="puces"><span class="puce">HIP HOP</span><span class="puce">ELECTRO</span></div>
@@ -653,7 +654,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/18cec54fc5306c228095b5843483a0e340635b8a.png" alt="Visuel de Boukan records: Dj Créole Princess // fka phaedra // Bamao Yendé // Broodoo Ramses"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h59 → 7h</p>
+    <p class="quand">Ven. 20 · 23h59 → 7h · 18e</p>
     <h3>Boukan records: Dj Créole Princess // fka phaedra // Bamao Yendé // Broodoo Ramses</h3>
     <p class="lieu">La Station - Gare des Mines</p>
     <div class="puces"></div>
@@ -665,7 +666,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/214_a0iyui.jpg" alt="Visuel de Amour Toujours @ Chez Moune"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h59</p>
+    <p class="quand">Ven. 20 · 23h59 · 9e</p>
     <h3>Amour Toujours @ Chez Moune</h3>
     <p class="lieu">Chez Moune</p>
     <div class="puces"><span class="puce">HIP HOP</span><span class="puce">DISCO HOUSE</span></div>
@@ -677,7 +678,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-20" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/b7b44b919d8a7f975ba8613e34dc800bea651024.jpg" alt="Visuel de Rex Club Presents Hunee - Hunchin&#x27; All Night Long"></div>
   <div class="infos">
-    <p class="quand">Ven. 20 · 23h59 → 7h</p>
+    <p class="quand">Ven. 20 · 23h59 → 7h · 2e</p>
     <h3>Rex Club Presents Hunee - Hunchin&#x27; All Night Long</h3>
     <p class="lieu">Rex Club</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">ELECTRO</span></div>
@@ -713,7 +714,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/dev/artworks/libre_esthetique_xut4oa.png" alt="Visuel de Libre Esthétique | Musique De Chambre"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 15h</p>
+    <p class="quand">Sam. 21 · 15h · 17e</p>
     <h3>Libre Esthétique | Musique De Chambre</h3>
     <p class="lieu">Salle Cortot</p>
     <div class="puces"><span class="puce">CLASSICAL</span></div>
@@ -737,7 +738,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/MZ_THANKS_21112026_169_lxsotr.jpg" alt="Visuel de La Grande Fête Des Marrons, Margaritas Et Melodramas"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 18h</p>
+    <p class="quand">Sam. 21 · 18h · 12e</p>
     <h3>La Grande Fête Des Marrons, Margaritas Et Melodramas</h3>
     <p class="lieu">Le Mazette</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">HOUSE</span></div>
@@ -749,7 +750,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/09/15/huge-3bd3f8a5eb4774776a98a4352fd2f8a3.jpeg" alt="Visuel de Concert d&#x27;Emmanuelle Parrenin | Monte le Son"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 19h</p>
+    <p class="quand">Sam. 21 · 19h · 19e</p>
     <h3>Concert d&#x27;Emmanuelle Parrenin | Monte le Son</h3>
     <p class="lieu">Médiathèque James Baldwin</p>
     <div class="puces"></div>
@@ -773,7 +774,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/DISSIDENT_JAZZ_Louise_Judith___Duo_1_iebtsl.png" alt="Visuel de [Dissident Bastille Jazz+Jam] Martins And Lander Duo"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 19h30</p>
+    <p class="quand">Sam. 21 · 19h30 · 9e</p>
     <h3>[Dissident Bastille Jazz+Jam] Martins And Lander Duo</h3>
     <p class="lieu">The Dissident Club</p>
     <div class="puces"><span class="puce">EXPERIMENTAL</span><span class="puce">JAZZ</span></div>
@@ -785,7 +786,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/badbiches_Susy_Lagrange_ifvydx" alt="Visuel de Cabaret Bad Biches : Qui A Tué Constance Palmer ?"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 20h</p>
+    <p class="quand">Sam. 21 · 20h · 18e</p>
     <h3>Cabaret Bad Biches : Qui A Tué Constance Palmer ?</h3>
     <p class="lieu">Les Trois Baudets</p>
     <div class="puces"><span class="puce">DRAG</span></div>
@@ -809,7 +810,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Fre%CC%81de%CC%81ric_Fromet_-_duo_zpr46p.jpg" alt="Visuel de Sam 21/11 - Frédéric Fromet En Concert"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 20h</p>
+    <p class="quand">Sam. 21 · 20h · 13e</p>
     <h3>Sam 21/11 - Frédéric Fromet En Concert</h3>
     <p class="lieu">Bateau El Alamein</p>
     <div class="puces"><span class="puce">CHANSON</span><span class="puce">REGGAE</span></div>
@@ -821,7 +822,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/SCLACVNT_cnhllh.png" alt="Visuel de La Belle Et La Cvnt"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 20h</p>
+    <p class="quand">Sam. 21 · 20h · 11e</p>
     <h3>La Belle Et La Cvnt</h3>
     <p class="lieu">The People Belleville</p>
     <div class="puces"><span class="puce">HARD GROOVE</span><span class="puce">TECHNO</span></div>
@@ -833,7 +834,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Latino">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/IMG_9249_atyhkj.jpg" alt="Visuel de Samedi / Cours &amp; Soirée Salsa Bercy Village Paris"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 20h15</p>
+    <p class="quand">Sam. 21 · 20h15 · 12e</p>
     <h3>Samedi / Cours &amp; Soirée Salsa Bercy Village Paris</h3>
     <p class="lieu">Le Triangle</p>
     <div class="puces"><span class="puce">SALSA</span></div>
@@ -845,7 +846,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/JAVA_MCANUFF_BD_m1uwlp.jpg" alt="Visuel de Java &amp; Winston Mcanuff + Isa Izquierdo (1ère Partie)"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 20h30</p>
+    <p class="quand">Sam. 21 · 20h30 · 13e</p>
     <h3>Java &amp; Winston Mcanuff + Isa Izquierdo (1ère Partie)</h3>
     <p class="lieu">Paul B</p>
     <div class="puces"><span class="puce">REGGAE</span></div>
@@ -869,7 +870,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Latino">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/031026_Groupie_Shotgun_horizontal_4_czwuh1.png" alt="Visuel de Fiesta Latina"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 22h</p>
+    <p class="quand">Sam. 21 · 22h · 18e</p>
     <h3>Fiesta Latina</h3>
     <p class="lieu">Madame Arthur</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">POP ROCK</span></div>
@@ -893,7 +894,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/billetterie26_1_usnsch.jpg" alt="Visuel de Vintage Clubbing W/ Mich Mich"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 22h30</p>
+    <p class="quand">Sam. 21 · 22h30 · 11e</p>
     <h3>Vintage Clubbing W/ Mich Mich</h3>
     <p class="lieu">La Casbah</p>
     <div class="puces"><span class="puce">ELECTRO</span><span class="puce">DISCO</span></div>
@@ -905,7 +906,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/BIRTH_SHOTGUN_1080x1920_yp8pel.jpg" alt="Visuel de Bussin"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h</p>
+    <p class="quand">Sam. 21 · 23h · 16e</p>
     <h3>Bussin</h3>
     <p class="lieu">Le Duplex</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">EDM</span></div>
@@ -917,7 +918,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/Saturday_16x9_nouzan.jpg" alt="Visuel de Le Rouge Saturday"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h</p>
+    <p class="quand">Sam. 21 · 23h · 9e</p>
     <h3>Le Rouge Saturday</h3>
     <p class="lieu">Le Rouge</p>
     <div class="puces"><span class="puce">TRAP</span><span class="puce">RAP</span></div>
@@ -929,7 +930,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/d4ba1143ede166fd33ef4c7a781fbfe67447a200.png" alt="Visuel de Ce Samedi @ Sacré : Daisybelle &amp; Orisha"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h → 6h</p>
+    <p class="quand">Sam. 21 · 23h → 6h · 18e</p>
     <h3>Ce Samedi @ Sacré : Daisybelle &amp; Orisha</h3>
     <p class="lieu">Sacré</p>
     <div class="puces"><span class="puce">HOUSE</span></div>
@@ -941,7 +942,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://images.ra.co/c5fd67b56ea1549905951c3e361f35631449ff53.png" alt="Visuel de reshape - Skee Mask b2b Vlada - all night long"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h → 6h30</p>
+    <p class="quand">Sam. 21 · 23h → 6h30 · 10e</p>
     <h3>reshape - Skee Mask b2b Vlada - all night long</h3>
     <p class="lieu">essaim</p>
     <div class="puces"><span class="puce">TECHNO</span></div>
@@ -965,7 +966,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Techno">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/4-horizontal_tli5vf.png" alt="Visuel de La Dancing #"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h55</p>
+    <p class="quand">Sam. 21 · 23h55 · 12e</p>
     <h3>La Dancing #</h3>
     <p class="lieu">Les Étoiles</p>
     <div class="puces"><span class="puce">ELECTRO</span><span class="puce">POP ROCK</span></div>
@@ -977,7 +978,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/OLLNESS_SHIFT_C_V1_SHOTGUN_1920x1080_rxcgdg.png" alt="Visuel de 2 Ans De Food Runners : Raclette &amp; Dj Set — Central Chapelle"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h59</p>
+    <p class="quand">Sam. 21 · 23h59 · 18e</p>
     <h3>2 Ans De Food Runners : Raclette &amp; Dj Set — Central Chapelle</h3>
     <p class="lieu">Central Chapelle</p>
     <div class="puces"><span class="puce">AFRO</span><span class="puce">AMAPIANO</span></div>
@@ -1001,7 +1002,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-21" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/215_gdhlv3.jpg" alt="Visuel de Bal De Pigalle @ Chez Moune"></div>
   <div class="infos">
-    <p class="quand">Sam. 21 · 23h59</p>
+    <p class="quand">Sam. 21 · 23h59 · 9e</p>
     <h3>Bal De Pigalle @ Chez Moune</h3>
     <p class="lieu">Chez Moune</p>
     <div class="puces"><span class="puce">DISCO</span><span class="puce">DISCO HOUSE</span></div>
@@ -1013,7 +1014,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/05/26/huge-927ec815dd6cb8b31ee5c16817259d89.png" alt="Visuel de Les Concerts du Dimanche Matin"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 0h</p>
+    <p class="quand">Dim. 22 · 0h · 1er</p>
     <h3>Les Concerts du Dimanche Matin</h3>
     <p class="lieu">Théâtre du Châtelet</p>
     <div class="puces"></div>
@@ -1025,7 +1026,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/20261122-LMHY-BRUNCH-header_shotgun_axai9w.png" alt="Visuel de Let Me Hold You | R&amp;B Brunch &amp; Day Party"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 11h30</p>
+    <p class="quand">Dim. 22 · 11h30 · 4e</p>
     <h3>Let Me Hold You | R&amp;B Brunch &amp; Day Party</h3>
     <p class="lieu">Le Cirque - Beaubourg</p>
     <div class="puces"><span class="puce">R&amp;B</span><span class="puce">HIP HOP</span></div>
@@ -1049,7 +1050,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/1920x1080_SHOTGUNRVB_aiukwj.jpg" alt="Visuel de Sunday Jam - Scène Ouverte"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 16h30</p>
+    <p class="quand">Dim. 22 · 16h30 · 11e</p>
     <h3>Sunday Jam - Scène Ouverte</h3>
     <p class="lieu">Les Disquaires</p>
     <div class="puces"><span class="puce">NEO SOUL</span><span class="puce">RAP</span></div>
@@ -1073,7 +1074,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Spectacle">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/BINGO-BANNIERE_00000_bqd0ur.jpg" alt="Visuel de Bingo Drag De Gigi Von Dredee À La Folie! Avec Brett Anne!"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 18h</p>
+    <p class="quand">Dim. 22 · 18h · 19e</p>
     <h3>Bingo Drag De Gigi Von Dredee À La Folie! Avec Brett Anne!</h3>
     <p class="lieu">À la folie</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">POP ROCK</span></div>
@@ -1085,7 +1086,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Autre">
   <div class="visuel"><img loading="lazy" src="https://cdn.paris.fr/qfapv4/2026/09/28/huge-2a35b0b2b91da37392ec0e27cc12b98f.jpg" alt="Visuel de Billy Cobham signe son grand retour le dimanche 22 novembre au Trianon"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 19h</p>
+    <p class="quand">Dim. 22 · 19h · 18e</p>
     <h3>Billy Cobham signe son grand retour le dimanche 22 novembre au Trianon</h3>
     <p class="lieu">Le Trianon</p>
     <div class="puces"></div>
@@ -1097,7 +1098,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="Rap">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/production/artworks/16_9_1_ts8inx" alt="Visuel de Lolo Zouaï Presents The Reverie Experience"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 20h</p>
+    <p class="quand">Dim. 22 · 20h · 8e</p>
     <h3>Lolo Zouaï Presents The Reverie Experience</h3>
     <p class="lieu">Salle Pleyel</p>
     <div class="puces"><span class="puce">POP</span><span class="puce">R&amp;B</span></div>
@@ -1133,7 +1134,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
 </article><article class="carte" data-jour="2026-11-22" data-ambiance="House">
   <div class="visuel"><img loading="lazy" src="https://assets.shotgun.live/image/upload/c_limit,w_3840,fl_lossy,f_webp,q_auto:good/dev/artworks/Image_Codex_18_sept._2026_19_15_16_racsza.png" alt="Visuel de Miss You Mon Amour @ Medellin Paris"></div>
   <div class="infos">
-    <p class="quand">Dim. 22 · 23h59</p>
+    <p class="quand">Dim. 22 · 23h59 · 8e</p>
     <h3>Miss You Mon Amour @ Medellin Paris</h3>
     <p class="lieu">Medellín Paris</p>
     <div class="puces"><span class="puce">HOUSE</span><span class="puce">TECH HOUSE</span></div>
@@ -1150,7 +1151,7 @@ footer{margin-top:48px;border-top:1px solid var(--ligne);padding-top:24px;displa
   <div class="orga"><strong>Tu organises une soirée ?</strong>Écris-nous sur Instagram,
     <a href="https://www.instagram.com/ouonsort.paris/" target="_blank" rel="noopener">@ouonsort.paris</a>, pour qu'on la découvre.</div>
   <p>Sélection faite à partir de Shotgun, Resident Advisor, Que faire à Paris et la presse sorties. Les horaires et les prix peuvent changer : vérifie toujours sur la billetterie.</p>
-  <p>Mis à jour le 22 novembre à 11h46. Nouveau récap chaque semaine sur <a href="https://www.tiktok.com/@ouonsort.paris" target="_blank" rel="noopener">TikTok</a>.</p>
+  <p>Mis à jour le 22 novembre à 12h00. Nouveau récap chaque semaine sur <a href="https://www.tiktok.com/@ouonsort.paris" target="_blank" rel="noopener">TikTok</a>.</p>
 </footer>
 </main>
 <script>
