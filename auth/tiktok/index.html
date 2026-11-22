@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>où on sort ? · connexion TikTok</title>
+<style>
+body{margin:0;background:#0B0B0C;color:#F4F4EF;font-family:system-ui,-apple-system,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+main{max-width:520px;width:100%}
+h1{font-size:28px;margin:0 0 12px}
+p{color:#A3A3A8;line-height:1.5}
+code{display:block;word-break:break-all;background:#18181B;border:1px solid #2E2E34;border-radius:12px;padding:14px;color:#D7FF3A;font-size:14px;margin:16px 0}
+button{font:inherit;font-weight:800;background:#D7FF3A;color:#0B0B0C;border:0;border-radius:999px;padding:12px 20px;min-height:44px;cursor:pointer}
+</style>
+</head>
+<body>
+<main>
+<h1 id="titre">Connexion TikTok</h1>
+<p id="texte">Copie le code ci-dessous et colle-le dans la fenêtre du Terminal (« Connecter TikTok »).</p>
+<code id="code">…</code>
+<button type="button" id="copier">Copier le code</button>
+</main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var code = q.get("code"), err = q.get("error_description") || q.get("error");
+  var el = document.getElementById("code");
+  if (code) { el.textContent = code; }
+  else {
+    document.getElementById("titre").textContent = "Connexion refusée";
+    document.getElementById("texte").textContent = err ? "TikTok a répondu : " + err : "Aucun code reçu. Relance « Connecter TikTok ».";
+    el.hidden = true; document.getElementById("copier").hidden = true;
+  }
+  document.getElementById("copier").addEventListener("click", function () {
+    navigator.clipboard.writeText(code).then(function () { document.getElementById("copier").textContent = "Copié ✓"; });
+  });
+})();
+</script>
+</body>
+</html>
